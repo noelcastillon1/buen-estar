@@ -8,7 +8,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        hero: "url('/public/assets/Woman by ocean.avif')",
+        hero: "url('/assets/Woman by ocean.avif')",
       },
     },
   },
@@ -16,9 +16,9 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#EEDAD7",
+          primary: "#DEE8D4",
           secondary: "#7FD1AE",
-          accent: "#FF7B90",
+          accent: "#EEDAD7",
           neutral: "#ffffff",
           "base-100": "#ffffff",
           info: "#9ECEAB",

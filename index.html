@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/main.css" rel="stylesheet" />
-    <title>Buen Estar y Salud</title>
+    <title>Bienestar y Salud Natural</title>
   </head>
-  <body>
+  <body class="bg-gradient-to-bl from-primary to-50%">
     <!-- NAVBAR -->
-    <nav class="navbar bg-neutral/25 px-16">
+    <nav class="navbar bg-neutral/75 px-16">
       <div class="navbar-start">
         <div class="navbar-start-container">
           <div class="dropdown md:hidden">
@@ -19,6 +19,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
+                id="hamburger-icon"
                 class="w-6 h-6"
               >
                 <path
@@ -28,109 +29,125 @@
                 />
               </svg>
             </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Services</li></a>
+              <a href="#"><li>Contact</li></a>
+            </ul>
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 hidden md:flex"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            />
-          </svg>
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              id="home-icon"
+              class="w-6 h-6 hidden md:flex"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="navbar-center">
+      <div class="navbar-center hidden md:flex">
         <ul class="flex gap-20">
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Services</li></a>
-          <a href="#"><li>Contact</li></a>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <button class="hero-btn btn w-5/12">Book Appointment</button>
+        <a href="#" class="btn btn-primary">Contact Us</a>
       </div>
     </nav>
     <!-- HERO -->
-    <div class="hero min-h-screen bg-gradient-to-bl from-primary to-50%">
-      <div class="hero-content gap-20">
+    <div class="hero-wrapper pb-16">
+      <div class="hero min-h-screen bg-hero">
         <div
-          class="hero-content-text flex flex-col text-left justify-between gap-5"
-        >
-          <h1 class="hero-header text-4xl">Buen Estar y Salud</h1>
-          <p class="hero-p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-            at, ipsam fugit quidem sequi ex vero voluptatibus labore? Aut, quia?
-          </p>
-          <div class="hero-button-container">
-            <button class="hero-btn btn w-5/12">Book Appointment</button>
+          class="hero-overlay bg-gradient-to-r from-white bg-opacity-60"
+        ></div>
+        <div class="hero-content gap-20">
+          <div
+            class="hero-content-text flex flex-col justify-between gap-5 w-3/4"
+          >
+            <h1 class="hero-header text-6xl">Bienestar y Salud Natural</h1>
+            <p class="hero-p text-4xl">
+              El camino hacia una perfecta salud... comienza hoy...
+            </p>
+            <div class="hero-button-container">
+              <button class="hero-btn btn w-5/12">Book Appointment</button>
+            </div>
           </div>
-        </div>
-        <div class="hero-img w-11/12">
-          <img src="./assets/Woman by ocean.avif" alt="" />
         </div>
       </div>
     </div>
     <!-- INFO -->
-    <div class="info-section-wrapper">
-      <div class="info-section flex justify-around px-16 gap-20">
-        <div class="info-section-img">
-          <img src="/assets/Family Sunset Wrap.avif" alt="" />
+    <div class="info-section-wrapper py-16">
+      <div class="info-section-container flex flex-col gap-16">
+        <div class="info-section flex flex-row justify-around px-16 gap-20">
+          <div class="info-section-img basis-1/2">
+            <img
+              src="/assets/Family Sunset Wrap.avif"
+              alt=""
+              class="rounded-l-3xl"
+            />
+          </div>
+          <div
+            class="info-section-text align-left flex flex-col justify-center gap-5 basis-1/2"
+          >
+            <h2 class="font-serif font-light text-5xl">Terapia de ventosas</h2>
+            <ul class="list-disc text-3xl">
+              <li>alivio de dolor</li>
+              <li>depresion y ansiedad</li>
+              <li>inflamacion</li>
+              <li>desintoxicacion</li>
+              <li>mejora la circulacion</li>
+              <li>mejora tu sistema inmune</li>
+            </ul>
+          </div>
         </div>
         <div
-          class="info-section-text align-left flex flex-col justify-center gap-5"
+          class="info-section flex flex-row-reverse justify-around px-16 gap-20"
         >
-          <h2 class="font-serif font-light text-3xl">
-            Lorem ipsum dolor sit amet.
-          </h2>
-          <p class="info-section-p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            dolorem, ut deleniti inventore praesentium reprehenderit? Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Assumenda a quae
-            veniam dolore, sint modi.
-          </p>
-        </div>
-      </div>
-      <div
-        class="info-section flex flex-row-reverse justify-around px-16 py-12 gap-20"
-      >
-        <div class="info-section-img">
-          <img src="/assets/Three women street photo.avif" alt="" />
-        </div>
-        <div
-          class="info-section-text align-left flex flex-col justify-center gap-5"
-        >
-          <h2 class="font-serif font-light text-3xl">
-            Lorem ipsum dolor sit amet.
-          </h2>
-          <p class="info-section-p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            dolorem, ut deleniti inventore praesentium reprehenderit? Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Assumenda a quae
-            veniam dolore, sint modi.
-          </p>
+          <div class="info-section-img basis-1/2">
+            <img
+              src="/assets/Three women street photo.avif"
+              alt=""
+              class="rounded-r-3xl"
+            />
+          </div>
+          <div
+            class="info-section-text align-left flex flex-col justify-center gap-5 basis-1/2"
+          >
+            <h2 class="font-serif font-light text-5xl">
+              Será esto un secreto?
+            </h2>
+            <p class="info-section-p text-3xl">
+              Salud es: Hacer ejercicio, tener buenos hábitos, una dieta
+              saludable, y tener una cultura de prevención. Balance.
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!-- CARD SERVICES -->
-    <div class="card-section-wrapper py-12">
+    <div class="card-section-wrapper py-16">
       <div class="card-section-header-wrapper w-1/2 m-auto">
         <div class="card-section-header flex flex-col gap-5 text-center py-8">
-          <h3 class="text-3xl">Lorem ipsum dolor sit amet.</h3>
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            provident aut minima dolores, eius illum. Asperiores unde dolorem
-            accusamus in?
-          </p>
+          <h3 class="text-3xl">Elije Terapias Alternativas</h3>
+          <p class="text-2xl">Para una Vida Plena y Saludable!</p>
         </div>
       </div>
       <div
-        class="card-section services flex flex-wrap justify-around gap-10 px-20"
+        class="card-section services flex flex-row gap-5 px-10 justify-around"
       >
         <div class="card basis-1/4 shadow-xl">
           <figure class="max-h-40 min-h-40">
@@ -146,6 +163,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
               mollitia?
             </p>
+            <button class="btn btn-primary">Contact</button>
           </div>
         </div>
         <div class="card basis-1/4 shadow-xl">
@@ -162,6 +180,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
               mollitia?
             </p>
+            <button class="btn btn-primary">Contact</button>
           </div>
         </div>
         <div class="card basis-1/4 shadow-xl">
@@ -178,6 +197,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
               mollitia?
             </p>
+            <button class="btn btn-primary">Contact</button>
           </div>
         </div>
         <div class="card basis-1/4 shadow-xl">
@@ -194,6 +214,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam,
               mollitia?
             </p>
+            <button class="btn btn-primary">Contact</button>
           </div>
         </div>
       </div>
