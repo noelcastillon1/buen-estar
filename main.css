@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Serif:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 300;
+}
+
+p,
+ul,
+li,
+.btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
