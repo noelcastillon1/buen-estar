@@ -2,10 +2,6 @@
 export default {
   content: ["./index.html"],
   theme: {
-    fontFamily: {
-      // sans: ["Lato", "ui-sans-serif"],
-      // serif: ["Noto Serif Display", "ui-serif"],
-    },
     extend: {
       backgroundImage: {
         hero: "url('/assets/Woman by ocean.avif')",
